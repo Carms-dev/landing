@@ -75,13 +75,14 @@
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-radius: 4px
 }
 
 .card-steps {
   /*display: inline-block;*/
-  width: 350px;
+  width: 30%;
   background-color: white;
   box-shadow: 5px 5px 8px rgb(200,200, 200);
 }
@@ -102,3 +103,25 @@
   margin: 0;
 }
 
+/*@media (max-width: 960px) {
+  .card-steps {
+    width: 700px;
+  }
+}*/
+@media (max-width: 720px) {
+  .card-steps {
+    width: 100%;
+    margin-bottom: 20px
+  }
+  .card-category {
+    width: 100%;
+    margin-bottom: 20px
+  }
+}
+
+/*@media (max-width: 540px) {
+  .card-steps {
+    width: 100%;
+  }
+}
+*/
